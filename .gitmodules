@@ -1,0 +1,3 @@
+[submodule "deps/apache-commons-math3-csharp"]
+	path = deps/apache-commons-math3-csharp
+	url = https://github.com/normanhh3/Apache-Commons-Math3-C-.git
