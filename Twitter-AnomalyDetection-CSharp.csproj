@@ -55,6 +55,10 @@
       <Name>Math</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="License" />
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />
