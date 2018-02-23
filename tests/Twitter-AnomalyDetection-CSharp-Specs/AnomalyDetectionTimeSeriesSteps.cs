@@ -31,6 +31,12 @@
             Assert.AreEqual(766, this.testData.Count);
         }
 
+        [Given(@"the number of observations per period is (.*)")]
+        public void GivenTheNumberOfObservationsPerPeriodIs(int numObservationsPerPeriod)
+        {
+            this.config.NumObsPerPeriod = numObservationsPerPeriod;
+        }
+
         [Given(@"the first (.*) values are NaN")]
         public void GivenTheFirstValuesAreNaN(int numOfValues)
         {

@@ -7,6 +7,7 @@
 @NaN
 Scenario: Input data with leading and trailing NaN values
 	Given I have an input set of test data
+	And the number of observations per period is 60
 	And the first 10 values are NaN
 	And the last value is NaN
 	And the maximum anomalies are 0.02
@@ -17,6 +18,7 @@ Scenario: Input data with leading and trailing NaN values
 @NaN
 Scenario: Input data with NaN values in the middle
 	Given I have an input set of test data
+	And the number of observations per period is 60
 	And the middle value in the data is NaN
 	And the direction is both
 	And the maximum anomalies are 0.02
@@ -25,6 +27,7 @@ Scenario: Input data with NaN values in the middle
 
 Scenario: Input data with no NaN values
 	Given I have an input set of test data
+	And the number of observations per period is 60
 	And the direction is both
 	And the maximum anomalies are 0.02
 	When I request the time-series anomalies for the input data
