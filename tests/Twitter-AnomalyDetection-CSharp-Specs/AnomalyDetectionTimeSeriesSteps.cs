@@ -28,6 +28,7 @@
                 csv.Configuration.RegisterClassMap<TestDataEntryMap>();
                 this.testData = csv.GetRecords<TestDataEntry>().ToImmutableList();
             }
+
             Assert.AreEqual(766, this.testData.Count);
         }
 

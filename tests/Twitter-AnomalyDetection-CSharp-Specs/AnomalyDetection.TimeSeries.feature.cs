@@ -64,63 +64,65 @@ namespace Twitter_AnomalyDetection_CSharp_Specs
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Input data with leading and trailing NaN values", new string[] {
-                "NaN"}, SourceLine=7)]
+                "NaN"}, SourceLine=6)]
         public virtual void InputDataWithLeadingAndTrailingNaNValues()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Input data with leading and trailing NaN values", new string[] {
                         "NaN"});
-#line 8
+#line 7
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 8
  testRunner.Given("I have an input set of test data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 9
  testRunner.And("the number of observations per period is 60", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
+#line 10
  testRunner.And("the first 10 values are NaN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 12
+#line 11
  testRunner.And("the last value is NaN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 13
+#line 12
  testRunner.And("the maximum anomalies are 0.02", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
+#line 13
  testRunner.And("the direction is both", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 15
+#line 14
  testRunner.When("I request the time-series anomalies for the input data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 16
+#line 15
  testRunner.Then("I expect there to be 131 anomalies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Input data with NaN values in the middle", new string[] {
-                "NaN"}, SourceLine=18)]
+                "NaN"}, SourceLine=17)]
         public virtual void InputDataWithNaNValuesInTheMiddle()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Input data with NaN values in the middle", new string[] {
                         "NaN"});
-#line 19
+#line 18
 this.ScenarioSetup(scenarioInfo);
-#line 20
+#line 19
  testRunner.Given("I have an input set of test data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 21
+#line 20
  testRunner.And("the number of observations per period is 60", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
+#line 21
  testRunner.And("the middle value in the data is NaN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
+#line 22
  testRunner.And("the direction is both", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 23
  testRunner.And("the maximum anomalies are 0.02", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
+#line 24
  testRunner.When("I request the time-series anomalies for the input data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 26
+#line 25
  testRunner.Then("I expect an exception to be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Input data with no NaN values", SourceLine=27)]
+        [TechTalk.SpecRun.ScenarioAttribute("Input data with no NaN values", new string[] {
+                "NaN"}, SourceLine=27)]
         public virtual void InputDataWithNoNaNValues()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Input data with no NaN values", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Input data with no NaN values", new string[] {
+                        "NaN"});
 #line 28
 this.ScenarioSetup(scenarioInfo);
 #line 29

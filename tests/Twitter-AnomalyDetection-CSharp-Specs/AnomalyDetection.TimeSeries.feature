@@ -3,7 +3,6 @@
 	As a developer
 	I want to find time-series anomalies
 
-
 @NaN
 Scenario: Input data with leading and trailing NaN values
 	Given I have an input set of test data
@@ -25,6 +24,7 @@ Scenario: Input data with NaN values in the middle
 	When I request the time-series anomalies for the input data
 	Then I expect an exception to be thrown
 
+@NaN
 Scenario: Input data with no NaN values
 	Given I have an input set of test data
 	And the number of observations per period is 60
