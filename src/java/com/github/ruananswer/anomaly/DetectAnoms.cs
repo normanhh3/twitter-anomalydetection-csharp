@@ -173,7 +173,7 @@ namespace com.github.ruananswer.anomaly
             /// use StlDec function
             /// first interpolation to solve problem data to much
             /// </summary>
-            // -- Step 1: Decompose data. This returns a univarite remainder which will be used for anomaly detection. Optionally, we might NOT decompose.
+            // -- Step 1: Decompose data. This returns a univariate remainder which will be used for anomaly detection. Optionally, we might NOT decompose.
             STLResult data = removeSeasonality(timestamps, series, config.NumObsPerPeriod);
             double[] data_trend = data.Trend;
             double[] data_seasonal = data.Seasonal;
