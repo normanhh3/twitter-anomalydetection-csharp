@@ -78,6 +78,8 @@
             var timestamps = this.testData.Select(x => x.Date.Ticks).ToArray();
             var values = this.testData.Select(x => x.Value).ToArray();
 
+            this.config.AnomsThreshold = .85;
+
             var detector = new DetectAnoms(this.config);
             this.result = () => detector.anomalyDetection(timestamps, values);
         }
