@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter-AnomalyDetection-CSharp", "Twitter-AnomalyDetection-CSharp.csproj", "{ECCD8874-E417-4734-B317-E840F1EA9ED3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9547A670-4B85-492E-83E6-E77F32DBF49C}"
+	ProjectSection(SolutionItems) = preProject
+		build.gradle = build.gradle
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter-AnomalyDetection-CSharp-Specs", "tests\Twitter-AnomalyDetection-CSharp-Specs\Twitter-AnomalyDetection-CSharp-Specs.csproj", "{49A190FB-BEEB-4FD2-85B2-0D4788B9CBFA}"
 EndProject
