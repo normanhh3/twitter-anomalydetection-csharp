@@ -20,6 +20,7 @@ namespace com.github.ruananswer.statistics
         {
             _n = initialValues.Length;
             //values = Arrays.copyOf(initialValues, _n);
+            values = new double[_n];
             System.Array.Copy(initialValues, values, _n);
             if (_n > 0)
             {
