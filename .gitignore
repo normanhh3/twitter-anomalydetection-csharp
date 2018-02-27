@@ -1,6 +1,7 @@
 .git/gitversion_cache/
 .DS_Store
 **/.DS_Store
+.gradle
 
 *.metaproj
 
