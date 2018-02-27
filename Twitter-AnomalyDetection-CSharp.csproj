@@ -50,12 +50,6 @@
     <Compile Include="src\java\com\github\ruananswer\stl\STLUtility.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="deps\apache-commons-math3-csharp\Math.csproj">
-      <Project>{b5c4017e-e790-4a28-b4f1-708d837a7387}</Project>
-      <Name>Math</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="License" />
     <None Include="README.md" />
   </ItemGroup>
